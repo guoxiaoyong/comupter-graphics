@@ -1,0 +1,7 @@
+import glob
+import os
+
+Import(['cflags', 'INC_sdlpath'])
+StaticLibrary('libguo3d', glob.glob('*.c'), CCFLAGS=cflags, CPPPATH=[os.getcwd(), INC_sdlpath])
+
+# vim: set filetype=python :
